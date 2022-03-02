@@ -37,7 +37,7 @@ while (keepPlaying === true) {
 			player.losses++;
 		}
 
-		keepPlaying = window.confirm('You have ' + player.wins + ' wins, ' + player.ties + ' ties, ' + player.losses + ' losses.\r\nPlay again?');
+		keepPlaying = window.confirm('You have\n' + player.wins + ' wins,\n' + player.ties + ' ties,\n' + player.losses + ' losses.\n\nPlay again?');
 	}
 }
 

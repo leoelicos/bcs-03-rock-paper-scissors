@@ -20,4 +20,6 @@ The game can be played by opening [Rock Paper, Scissors](https://leoelicos.githu
 
 ## Licence
 
-MIT Licence © 2022 Leo Wong
+&copy; Leo Wong <leoelicos@gmail.com>
+
+Licensed under the [MIT License](./LICENSE.txt).

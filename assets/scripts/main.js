@@ -17,19 +17,23 @@ var gameChoices = [rock, paper, scissors];
 window.alert('*********************\nRock-Paper-Scissors\n*********************\n\nRules:\nrock (R) beats scissors (S)\npaper (P) beats rock (R)\nscissors (S) beats paper (P)');
 
 var keepPlaying = window.confirm('Play ?');
+var checkValues = ['R', 'P', 'R'];
 
 while (keepPlaying === true) {
 	var playerChoice = window.prompt('To play, type R, P or S', 'R');
-	var result = 'This game: ';
 
 	// player selects cancel
 	if (playerChoice == null) {
 		keepPlaying = false;
 	}
+	// check data is either R, P or S. If not, try again.
+	else if (!checkValues.includes(playerChoice.toUpperCase())) {
+		window.alert('Invalid command. Please type R, P or S. Try again.');
+	}
 	// player wants to play
 	else {
 		playerChoice = playerChoice.toUpperCase();
-
+		var result = 'This game: ';
 		result += 'You chose ';
 		if (playerChoice === rock) {
 			result += 'rock';
